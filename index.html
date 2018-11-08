@@ -7,29 +7,36 @@
 
     <meta i18n-path='./i18n/index.{lang}'>
 
-    <title>i18n国际化</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>i18n国际化-首页</title>
+    <link rel="stylesheet" href="./css/common.css">
+
     <script src="./lib/jquery.min.js"></script>
     <script src="./lib/i18n.min.js"></script>
+    <script src="./js/common.js"></script>
 </head>
 <body>
     <header>
-        <div i18n-lang-btn='en' class="i18n_btn">English</div>
-        <div i18n-lang-btn='cn' class="i18n_btn active">中文</div>
+        <div i18n-lang-btn='en' class="i18n_btn en">English</div>
+        <div i18n-lang-btn='cn' class="i18n_btn cn">中文</div>
     </header>
     <div class="content">
+        <!-- 当前页 -->
         <p i18n-p="1">国际化</p>
-    </div>
 
-    <script>
-        let lang = window.localStorage.getItem("LxI18nLang") || ""
-        if(lang){
-            window.localStorage.setItem("LxI18nLang", "cn");
-        }
-        // 中英文切换
-        $(".i18n_btn").on("click", function() {
-            $(this).addClass("active").siblings(".i18n_btn").removeClass("active");
-        });
-    </script>
+        <!-- 关键字 -->
+        <p i18n-k="1">关键字</p>
+
+        <!-- 公共的 -->
+        <p i18n-c="1">公共的</p>
+
+        <!-- 图片 -->
+        <img i18n-p-i="2" alt="">
+
+        <!-- 输入框提示文字 -->
+        <input type="text" i18n-p-ph="3" />
+
+        <!-- 样式 -->
+        <div i18n-s class="mystyle" i18n-p-i="4">样式</div>
+    </div>
 </body>
 </html>

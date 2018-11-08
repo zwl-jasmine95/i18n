@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta i18n-path='./i18n/hello/hello.{lang}'>
+
+    <title>i18n国际化-hello</title>
+    <link rel="stylesheet" href="../css/common.css">
+    
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/i18n.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+    <header>
+        <div i18n-lang-btn='en' class="i18n_btn en">English</div>
+        <div i18n-lang-btn='cn' class="i18n_btn cn">中文</div>
+    </header>
+    <div class="content">
+        <p i18n-p="1">英语</p>
+        <p i18n-k="1">国关键字际化</p>
+        <p i18n-c="1">公共的</p>
+    </div>
+
+</body>
+</html>

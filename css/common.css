@@ -14,4 +14,19 @@ header::after{
 
 .content{
     border: solid 1px red;
+    padding: 40px ;
+}
+
+input{
+    display: block;
+    margin: 10px 0;
+}
+
+
+/* 中英文样式 */
+.i18n-cn{
+    color: blue;
+}
+.i18n-en{
+    color: red;
 }
