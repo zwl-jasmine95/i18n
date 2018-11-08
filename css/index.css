@@ -1,0 +1,17 @@
+header::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.i18n_btn{
+    float: left;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.i18n_btn.active{
+    color: red;
+}
+
+.content{
+    border: solid 1px red;
+}

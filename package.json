@@ -1,0 +1,25 @@
+{
+  "name": "i18n",
+  "version": "1.0.0",
+  "description": "国际化",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwl-jasmine95/i18n.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zwl-jasmine95/i18n/issues"
+  },
+  "homepage": "https://github.com/zwl-jasmine95/i18n#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

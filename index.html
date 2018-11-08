@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta i18n-path='./i18n/index.{lang}'>
+
+    <title>i18n国际化</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/i18n.min.js"></script>
+</head>
+<body>
+    <header>
+        <div i18n-lang-btn='en' class="i18n_btn">English</div>
+        <div i18n-lang-btn='cn' class="i18n_btn active">中文</div>
+    </header>
+    <div class="content">
+        <p i18n-p="1">国际化</p>
+    </div>
+
+    <script>
+        let lang = window.localStorage.getItem("LxI18nLang") || ""
+        if(lang){
+            window.localStorage.setItem("LxI18nLang", "cn");
+        }
+        // 中英文切换
+        $(".i18n_btn").on("click", function() {
+            $(this).addClass("active").siblings(".i18n_btn").removeClass("active");
+        });
+    </script>
+</body>
+</html>
